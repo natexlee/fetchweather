@@ -42,9 +42,6 @@ public class fetchWeather {
 
 				System.out.println("Fetching weather for " + userInput);
 				
-				//url = "https://weatherdbi.herokuapp.com/data/weather/" + userInput;
-				
-			//}
 		 
 		 
 		 BufferedReader reader;
