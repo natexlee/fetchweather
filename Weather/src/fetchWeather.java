@@ -24,10 +24,6 @@ public class fetchWeather {
 	
 	static String userInput;
 	
-	//static String url;
-	
-
-//	String url = weather.url;
 	
 	
 	
@@ -56,7 +52,7 @@ public class fetchWeather {
 		 StringBuffer responseContent = new StringBuffer();
 		 
 		 try {
-			URL url = new URL("https://weatherdbi.herokuapp.com/data/weather/hilton" + userInput);
+			URL url = new URL("https://weatherdbi.herokuapp.com/data/weather/" + userInput);
 			 //URL url = new URL("https://weatherdbi.herokuapp.com/data/weather/hilton");
 			 connection = (HttpURLConnection) url.openConnection();
 			
@@ -100,54 +96,11 @@ public class fetchWeather {
 //			
 			
 		 
-		 System.out.println(parse(responseContent.toString()));
-		 
 	 } 
 			
 			
 		 
 	 }
-	
-	
-	
-	public static String parse(String responseBody) {
-		
-		
-		
-		//String region = responseBody.getJSONObject("region");
-		
-//		return responseBody.toString();
-		
-//		for (int i = 0; i < responseBody.length(); i++) {
-//            JSONObject venueObject = responseBody.getJSONObject("region");
-//            //   String id = venueObject.getString(TAG_PID);
-//           // String name = venueObject.getString(TAG_NAME);
-//
-//            
-//           }
-		
-		//JSONObject weather = new JSONObject(responseBody);
-		
-		
-//		JSONObject weather = new JSONObject(responseBody);
-		
-		//String region = responseBody.getString("region");
-		
-		
-		//return responseBody;
-//		JSONObject weather = new JSONObject(responseBody);
-		
-		
-		
-		
-		
-	}
-	
-	
-	
-	
-	
-	
 	
 	
 
